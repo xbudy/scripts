@@ -26,11 +26,9 @@ def weather():
     tm=soup.find('div',{"id":"wob_dts"}).text
     hz=soup.find('span',{"class":"vk_gy vk_sh"}).text
     print("its : ",weather," at : ",tm," in : ",plc,"mean its : ",hz )
-try :
-    
-    while True:
+while True:
+    try:
         weather()
-except:
-    print("choose valid place")
-    while True:
-        weather()
+    except Exception:
+        print("choose a valid place")
+        False
