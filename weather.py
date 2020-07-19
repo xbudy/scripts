@@ -13,6 +13,7 @@ def weather():
     plc1=input("where : ")##########################place
     params = (
         ('client', 'firefox-b-e'),
+        ('hl', 'en')
         ('q', 'weather'+plc1),
     )
 
