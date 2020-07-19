@@ -1,3 +1,10 @@
+print("__  __    ____  _   _ ______   __")
+print("\ \/ /   | __ )| | | |  _ \ \ / /")
+print(" \  /    |  _ \| | | | | | \ V / ")
+print(" /  \    | |_) | |_| | |_| || |  ")
+print("/_/\_\___|____/ \___/|____/ |_|  ")
+print("    |_____|                      ")
+
 import requests
 from bs4 import BeautifulSoup
 headers = {
@@ -12,8 +19,8 @@ headers = {
 def weather():
     plc1=input("where : ")##########################place
     params = (
+        ('hl', 'en'),
         ('client', 'firefox-b-e'),
-        ('hl', 'en')
         ('q', 'weather'+plc1),
     )
 
